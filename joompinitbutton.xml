@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="joomgallery" method="upgrade">
+  <name>PLG_JOOMGALLERY_JOOMPINITBUTTON</name>
+  <author>JoomGallery::ProjectTeam</author>
+  <creationDate>2019/05/08</creationDate>
+  <copyright>Copyright (C) 2013 - 2019 Open Source Matters. All rights reserved.</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <authorUrl>www.joomgalleryfriends.net</authorUrl>
+  <version>3.0.0</version>
+  <description>PLG_JOOMGALLERY_JOOMPINITBUTTON_XML_DESCRIPTION</description>
+  <files>
+    <filename plugin="joompinitbutton">joompinitbutton.php</filename>
+    <filename>index.html</filename>
+  </files>
+  <languages folder="language">
+    <language tag="en-GB">en-GB/en-GB.plg_joomgallery_joompinitbutton.ini</language>
+    <language tag="en-GB">en-GB/en-GB.plg_joomgallery_joompinitbutton.sys.ini</language>
+    <language tag="de-DE">de-DE/de-DE.plg_joomgallery_joompinitbutton.ini</language>
+    <language tag="de-DE">de-DE/de-DE.plg_joomgallery_joompinitbutton.sys.ini</language>
+  </languages>
+  <config>
+    <fields name="params">
+      <fieldset name="basic">
+        <field name="pin_count_position" type="radio" default="beside" label="PLG_JOOMGALLERY_JOOMPINITBUTTON_FIELD_PINCOUNTPOSITION_LABEL" description="PLG_JOOMGALLERY_JOOMPINITBUTTON_FIELD_PINCOUNTPOSITION_DESC" class="btn-group">
+          <option value="above">PLG_JOOMGALLERY_JOOMPINITBUTTON_FIELD_PINCOUNTPOSITION_ABOVE</option>
+          <option value="beside">PLG_JOOMGALLERY_JOOMPINITBUTTON_FIELD_PINCOUNTPOSITION_BESIDE</option>
+          <option value="none">PLG_JOOMGALLERY_JOOMPINITBUTTON_FIELD_PINCOUNTPOSITION_NONE</option>
+        </field>
+        <field name="add_description" type="radio" default="1" label="PLG_JOOMGALLERY_JOOMPINITBUTTON_FIELD_ADDDESCRIPTION_LABEL" description="PLG_JOOMGALLERY_JOOMPINITBUTTON_FIELD_ADDDESCRIPTION_DESC" class="btn-group">
+          <option value="0">JNO</option>
+          <option value="1">JYES</option>
+        </field>
+      </fieldset>
+    </fields>
+  </config>
+  <updateservers>
+    <server type="collection" priority="1" name="JoomGallery Update Service">https://www.joomgalleryfriends.net/components/com_newversion/xml/extensions3.xml</server>
+  </updateservers>
+</extension>
